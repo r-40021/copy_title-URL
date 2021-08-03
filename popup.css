@@ -1,7 +1,74 @@
-body{
+body {
+    letter-spacing: .15em;
     width: 400px;
+    font-size: 16px;
 }
-.hello{
-    color: #333;
-    font-size: 30px;
+
+* {
+    color: #606c76;
+    box-sizing: border-box;
+    font-family: -apple-system, blinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Arial", "Roboto", "Hiragino Kaku Gothic ProN", YuGothicM, YuGothic, Meiryo, 'Noto Sans JP', sans-serif;
+}
+
+@font-face {
+    font-family: YuGothicM;
+    font-weight: normal;
+    src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
+    /* Windows8.1ではMediumがないのでRegularを指定 */
+}
+
+@font-face {
+    font-family: YuGothicM;
+    font-weight: bold;
+    src: local("YoGothic-Bold"), local("Yu Gothic");
+}
+
+.content{
+    margin: 2em 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.2em 1em;
+    width: 100%;
+    margin-top: .3em;
+}
+
+.text {
+    position: relative;
+}
+
+.text input {
+    color: #727d86;
+    font: 16px sans-serif;
+    width: 100%;
+    padding: 0;
+    padding-bottom: .1em;
+    letter-spacing: 1px;
+    border: 0;
+}
+
+.text input:focus {
+    outline: none;
+}
+
+.text input:focus::after {
+    outline: none;
+}
+
+.text::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 0;
+    content: '';
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #4c3cda;
+}
+
+.text .column {
+    width: 100%;
+    height: 100%;
 }

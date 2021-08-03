@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
+
 <body>
-    <p class="hello">Hello, world</p>
-    <script src="popup.js" defer></script>
+  <div class="content">
+  <label for="pageTitle" class="column">タイトル</label>
+  <div class="grid">
+    <div class="text">
+      <input type="text" id="pageTitle" class="column" readonly>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <label for="pageURL" class="column">URL</label>
+  <div class="grid">
+    <div class="text">
+      <input type="url" id="pageURL" class="column" readonly>
+    </div>
+  </div>
+  </div>
+
+  <script src="popup.js" defer></script>
 </body>
+
 </html>
