@@ -1,74 +1,164 @@
 body {
-    letter-spacing: .15em;
-    width: 400px;
-    font-size: 16px;
+  letter-spacing: 0.15em;
+  width: 400px;
+  font-size: 16px;
 }
 
 * {
-    color: #606c76;
-    box-sizing: border-box;
-    font-family: -apple-system, blinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Arial", "Roboto", "Hiragino Kaku Gothic ProN", YuGothicM, YuGothic, Meiryo, 'Noto Sans JP', sans-serif;
+  color: #606c76;
+  box-sizing: border-box;
+  font-family: -apple-system, blinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+    "Arial", "Roboto", "Hiragino Kaku Gothic ProN", YuGothicM, YuGothic, Meiryo,
+    "Noto Sans JP", sans-serif;
 }
 
 @font-face {
-    font-family: YuGothicM;
-    font-weight: normal;
-    src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
-    /* Windows8.1ではMediumがないのでRegularを指定 */
+  font-family: YuGothicM;
+  font-weight: normal;
+  src: local("YuGothic-Medium"), local("Yu Gothic Medium"),
+    local("YuGothic-Regular");
+  /* Windows8.1ではMediumがないのでRegularを指定 */
 }
 
 @font-face {
-    font-family: YuGothicM;
-    font-weight: bold;
-    src: local("YoGothic-Bold"), local("Yu Gothic");
+  font-family: YuGothicM;
+  font-weight: bold;
+  src: local("YoGothic-Bold"), local("Yu Gothic");
 }
 
-.content{
-    margin: 2em 0;
+.content {
+  margin: 2em 0;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 1.2em 1em;
-    width: 100%;
-    margin-top: .3em;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.2em 1em;
+  width: 100%;
+  margin-top: 0.3em;
 }
 
 .text {
-    position: relative;
+  position: relative;
 }
 
 .text input {
-    color: #727d86;
-    font: 16px sans-serif;
-    width: 100%;
-    padding: 0;
-    padding-bottom: .1em;
-    letter-spacing: 1px;
-    border: 0;
+  color: #727d86;
+  font: 16px sans-serif;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 0.1em;
+  letter-spacing: 1px;
+  border: 0;
 }
 
 .text input:focus {
-    outline: none;
+  outline: none;
 }
 
 .text input:focus::after {
-    outline: none;
+  outline: none;
 }
 
 .text::after {
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin-top: 0;
-    content: '';
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-color: #4c3cda;
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 0;
+  content: "";
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #4c3cda;
 }
 
 .text .column {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background-color: #4c3cda;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+button:hover {
+  background-color: #2f22a3;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+button svg {
+  fill: #fff;
+}
+svg.withText{
+    vertical-align: middle;
+    margin-right: .7em;
+}
+
+.shareSNS{
+    background-color: #fff;
     width: 100%;
-    height: 100%;
+    text-align: center;
+    margin: .3em 0;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.copyBoth{
+    color: #4c3cda;
+    border-color: #4c3cda;
+}
+.copyBoth svg{
+    fill: #4c3cda;
+}
+.copyBoth:hover{
+    background-color: #4c3cda;
+}
+
+.FB{
+    color: #1877f2;
+    border-color: #1877f2;
+}
+.FB svg{
+    fill: #1877f2;
+}
+.FB:hover{
+    background-color: #1877f2;
+}
+
+.twitter{
+    color: #1DA1F2;
+    border-color: #1DA1F2;
+}
+.twitter svg{
+    fill: #1DA1F2;
+}
+.twitter:hover{
+    background-color: #1DA1F2;
+}
+
+.LINE{
+    color: #00B900;
+    border-color: #00B900;
+}
+.LINE svg{
+    fill: #00B900;
+}
+.LINE:hover{
+    background-color: #00B900;
+}
+
+.shareSNS:hover{
+    color: #fff;
+}
+.shareSNS:hover svg{
+    fill: #fff;
 }
