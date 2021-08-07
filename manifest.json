@@ -1,20 +1,17 @@
 {
-    "name": "タイトルとURLをコピー",
-    "description": "ページのタイトルとURLを簡単にコピーできます。",
-    "version": "1.0",
-    "manifest_version": 3,
-    "icons": {
-      "16": "icon_16x16.png",
-      "48": "icon_48x48.png",
-      "128": "icon_128x128.png"
+  "name": "タイトルとURLをコピー",
+  "description": "ページのタイトルとURLを簡単にコピーできます。",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon_16x16.png",
+    "48": "icon_48x48.png",
+    "128": "icon_128x128.png"
   },
-  "permissions": [
-    "tabs"
-  ],
-    "action": {
-      "default_title": "タイトルとURLをコピー",
-      "default_icon": "icon_48x48.png",
-      "default_popup": "popup.html"
-    }
+  "permissions": ["activeTab"],
+  "action": {
+    "default_title": "タイトルとURLをコピー",
+    "default_icon": "icon_48x48.png",
+    "default_popup": "popup.html"
   }
-  
+}

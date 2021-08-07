@@ -28,7 +28,7 @@ chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, tabs => {
         windowOpen("https://twitter.com/intent/tweet?text=" + encodeURIComponent(tabTitle) + "%0a&url=" + encodeURIComponent(tabUrl));
     }, false);
     document.getElementById("LINE").addEventListener("click", ()=>{
-        windowOpen("https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(tabTitle));
+        windowOpen("https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(tabUrl));
     }, false);
 
 });
