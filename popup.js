@@ -7,6 +7,7 @@ chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, tabs => {
 
     title.value = tabTitle;
     url.value = tabUrl;
+    
     document.getElementById("copyTitle").addEventListener("click", () => {
         navigator.clipboard.writeText(tabTitle);
         showCheck("copyTitle");
@@ -30,6 +31,12 @@ chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, tabs => {
     document.getElementById("LINE").addEventListener("click", ()=>{
         windowOpen("https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(tabUrl));
     }, false);
+    
+    if(!/http\:\/\/|https\:\/\//.test(tabUrl)) {
+        const element = document.getElementById("sns");
+        element.style.marginTop = "1.5em";
+        element.textContent = "このページでは SNS を用いたシェア機能をご利用になれません。ご了承ください。";
+    }
 
 });
 
