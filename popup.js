@@ -63,7 +63,7 @@ function showCheck(parentId) {
 }
 
 function windowOpen(url) {
-    window.open(url, 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1')
+    window.open(url, 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1');
     this.close();
     return false;
 }
