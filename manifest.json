@@ -1,6 +1,6 @@
 {
-  "name": "タイトルとURLをコピー",
-  "description": "ページのタイトルとURLを簡単にコピーできます。",
+  "name": "ページ簡単共有",
+  "description": "閲覧しているページを簡単に共有できます。",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
@@ -10,7 +10,7 @@
   },
   "permissions": ["activeTab","scripting","contextMenus"],
   "action": {
-    "default_title": "タイトルとURLをコピー",
+    "default_title": "ページを共有",
     "default_icon": "icon_48x48.png",
     "default_popup": "popup.html"
   },
