@@ -25,6 +25,12 @@ chrome.contextMenus.create({
 });
 chrome.contextMenus.create({
   parentId: parent,
+  id: "mail",
+  title: "メールで送信",
+  contexts: ["all"],
+});
+chrome.contextMenus.create({
+  parentId: parent,
   id: "FB",
   title: "Facebook でシェア",
   contexts: ["all"],
@@ -86,6 +92,13 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         function: LINE,
       });
       break;
+
+    case "mail":
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        function: mail,
+      });
+      break;
   }
 });
 function title() {
@@ -125,9 +138,9 @@ function FB() {
 function tweet() {
   window.open(
     "https://twitter.com/intent/tweet?text=" +
-      encodeURIComponent(document.title) +
-      "%0a&url=" +
-      encodeURIComponent(location.href),
+    encodeURIComponent(document.title) +
+    "%0a&url=" +
+    encodeURIComponent(location.href),
     "tweetwindow",
     "width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1"
   );
@@ -135,8 +148,14 @@ function tweet() {
 function LINE() {
   window.open(
     "https://social-plugins.line.me/lineit/share?url=" +
-      encodeURIComponent(location.href),
+    encodeURIComponent(location.href),
     "tweetwindow",
     "width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1"
   );
+}
+function mail() {
+  const subject = "Web サイトの共有";
+  const body = document.title + "%0D%0A" + location.href;
+  window.open("mailto:?subject=" + subject + "&body=" + body, "tweetwindow",
+    "width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1");
 }

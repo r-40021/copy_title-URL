@@ -103,6 +103,17 @@ svg.withText{
     margin-right: .7em;
 }
 
+.sendMail{
+  color: #202020;
+  border-color: #202020;
+}
+.sendMail svg{
+  fill: #202020;
+}
+.sendMail:hover{
+  background-color: #202020;
+}
+
 .shareSNS{
     background-color: #fff;
     width: 100%;
