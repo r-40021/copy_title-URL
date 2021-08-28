@@ -1,53 +1,53 @@
 chrome.runtime.onInstalled.addListener(function (details) {
-/* コンテキストメニューを作成 */
-const parent = chrome.contextMenus.create({
-  id: "share",
-  title: "ページを共有",
-  contexts: ["all"],
-});
+    /* コンテキストメニューを作成 */
+    const parent = chrome.contextMenus.create({
+      id: "share",
+      title: "ページを共有",
+      contexts: ["all"],
+    });
 
-chrome.contextMenus.create({
-  parentId: parent,
-  id: "title",
-  title: "ページタイトルをコピー",
-  contexts: ["all"],
-});
-chrome.contextMenus.create({
-  parentId: parent,
-  id: "URL",
-  title: "URL をコピー",
-  contexts: ["all"],
-});
-chrome.contextMenus.create({
-  parentId: parent,
-  id: "both",
-  title: "ページタイトルと URL をコピー",
-  contexts: ["all"],
-});
-chrome.contextMenus.create({
-  parentId: parent,
-  id: "FB",
-  title: "Facebook でシェア",
-  contexts: ["all"],
-});
-chrome.contextMenus.create({
-  parentId: parent,
-  id: "tweet",
-  title: "ツイート",
-  contexts: ["all"],
-});
-chrome.contextMenus.create({
-  parentId: parent,
-  id: "LINE",
-  title: "LINE で送る",
-  contexts: ["all"],
-});
-chrome.contextMenus.create({
-  parentId: parent,
-  id: "mail",
-  title: "メールで送信",
-  contexts: ["all"],
-});
+    chrome.contextMenus.create({
+      parentId: parent,
+      id: "title",
+      title: "ページタイトルをコピー",
+      contexts: ["all"],
+    });
+    chrome.contextMenus.create({
+      parentId: parent,
+      id: "URL",
+      title: "URL をコピー",
+      contexts: ["all"],
+    });
+    chrome.contextMenus.create({
+      parentId: parent,
+      id: "both",
+      title: "ページタイトルと URL をコピー",
+      contexts: ["all"],
+    });
+    chrome.contextMenus.create({
+      parentId: parent,
+      id: "FB",
+      title: "Facebook でシェア",
+      contexts: ["all"],
+    });
+    chrome.contextMenus.create({
+      parentId: parent,
+      id: "tweet",
+      title: "ツイート",
+      contexts: ["all"],
+    });
+    chrome.contextMenus.create({
+      parentId: parent,
+      id: "LINE",
+      title: "LINE で送る",
+      contexts: ["all"],
+    });
+    chrome.contextMenus.create({
+      parentId: parent,
+      id: "mail",
+      title: "メールで送信",
+      contexts: ["all"],
+    });
 });
 
 /* コンテキストメニューがクリックされた時の処理 */
@@ -156,10 +156,10 @@ function LINE() {
 }
 function mail(){
   window.open(
-    "mailto:?Subject=<共有>" +
-    document.title + 
+    "mailto:?Subject=" + encodeURIComponent("【Web ページの共有】" +
+    document.title) + 
     "&body=" +
-    document.title + "\n" +
+    encodeURIComponent(document.title) + "%0D%0A" +
       encodeURIComponent(location.href),
     "tweetwindow",
     "width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1"

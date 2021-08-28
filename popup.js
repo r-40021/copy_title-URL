@@ -31,6 +31,9 @@ chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, tabs => {
     document.getElementById("LINE").addEventListener("click", ()=>{
         windowOpen("https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(tabUrl));
     }, false);
+     document.getElementById("mail").addEventListener("click", ()=>{
+        windowOpen("mailto:?Subject=" + encodeURIComponent("【Web ページの共有】" + tabTitle) + "&body=" + encodeURIComponent(tabTitle) + "%0D%0A" + encodeURIComponent(tabUrl));
+    }, false);
     
     if(!/http\:\/\/|https\:\/\//.test(tabUrl)) {
         const element = document.getElementById("sns");

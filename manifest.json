@@ -1,7 +1,7 @@
 {
   "name": "ページ簡単共有",
   "description": "閲覧しているページを簡単に共有できます。",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "icons": {
     "16": "icon_16x16.png",

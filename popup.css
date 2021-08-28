@@ -46,7 +46,7 @@ body {
   color: #727d86;
   font: 16px sans-serif;
   width: 100%;
-  padding: 0;
+  padding: 0 .25em;
   padding-bottom: 0.1em;
   letter-spacing: 1px;
   border: 0;
@@ -156,15 +156,15 @@ svg.withText{
     background-color: #00B900;
 }
 
-.mail{
-  color: #333;
-  border-color: #333;
+.sendMail{
+  color: gray;
+  border-color: gray;
 }
-.mail svg{
-  fill: #333;
+.sendMail svg{
+  fill: gray;
 }
-.mail:hover{
-  background-color: #333;
+.sendMail:hover{
+  background-color: gray;
 }
 
 .shareSNS:hover{
