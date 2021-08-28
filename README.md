@@ -1,7 +1,6 @@
 # ページ簡単共有
 今見ているページを簡単に共有できる Chrome 拡張機能
 
-![2クリックで共有](https://user-images.githubusercontent.com/75155258/128626040-bad11ae3-10be-47df-b34f-b49789d5bb7e.png)
+![2クリックで共有](https://user-images.githubusercontent.com/75155258/131208503-fce1ef0d-bc9d-4d2f-9382-7e8bf335dc11.png)
 
-![右クリックで共有](https://user-images.githubusercontent.com/75155258/128626042-49df47e5-8628-4939-88ea-448a35ba2d5a.png)
-
+![右クリックで共有](https://user-images.githubusercontent.com/75155258/131208510-d79bf097-722b-4678-9123-caa7a6335b8d.png)
