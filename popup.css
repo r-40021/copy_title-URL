@@ -156,9 +156,20 @@ svg.withText{
     background-color: #00B900;
 }
 
+.mail{
+  color: #333;
+  border-color: #333;
+}
+.mail svg{
+  fill: #333;
+}
+.mail:hover{
+  background-color: #333;
+}
+
 .shareSNS:hover{
-    color: #fff;
+  color: #fff;
 }
 .shareSNS:hover svg{
-    fill: #fff;
+  fill: #fff;
 }

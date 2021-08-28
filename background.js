@@ -1,3 +1,4 @@
+chrome.runtime.onInstalled.addListener(function (details) {
 /* コンテキストメニューを作成 */
 const parent = chrome.contextMenus.create({
   id: "share",
@@ -40,6 +41,13 @@ chrome.contextMenus.create({
   id: "LINE",
   title: "LINE で送る",
   contexts: ["all"],
+});
+chrome.contextMenus.create({
+  parentId: parent,
+  id: "mail",
+  title: "メールで送信",
+  contexts: ["all"],
+});
 });
 
 /* コンテキストメニューがクリックされた時の処理 */
@@ -84,6 +92,12 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
         function: LINE,
+      });
+      break;
+    case "mail":
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        function: mail,
       });
       break;
   }
@@ -135,6 +149,17 @@ function tweet() {
 function LINE() {
   window.open(
     "https://social-plugins.line.me/lineit/share?url=" +
+      encodeURIComponent(location.href),
+    "tweetwindow",
+    "width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1"
+  );
+}
+function mail(){
+  window.open(
+    "mailto:?Subject=<共有>" +
+    document.title + 
+    "&body=" +
+    document.title + "\n" +
       encodeURIComponent(location.href),
     "tweetwindow",
     "width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1"
