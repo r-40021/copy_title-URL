@@ -1,5 +1,6 @@
 const lang = chrome.i18n.getMessage("lang");
 if (lang === "ja") {
+    document.documentElement.lang = "ja"
     document.getElementById("linkWrapper").remove();
     document.getElementById("LINEWrapper").style.display = "";
 } else {
