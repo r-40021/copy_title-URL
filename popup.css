@@ -112,8 +112,10 @@ svg.withText{
     border-style: solid;
 }
 
+.copyBoth, .copyBoth span {
+  color: #4c3cda;
+}
 .copyBoth{
-    color: #4c3cda;
     border-color: #4c3cda;
 }
 .copyBoth svg{
@@ -123,8 +125,10 @@ svg.withText{
     background-color: #4c3cda;
 }
 
+.FB, .FB span {
+  color: #1877f2;
+}
 .FB{
-    color: #1877f2;
     border-color: #1877f2;
 }
 .FB svg{
@@ -134,8 +138,10 @@ svg.withText{
     background-color: #1877f2;
 }
 
+.twitter, .twitter span {
+  color: #1DA1F2;
+}
 .twitter{
-    color: #1DA1F2;
     border-color: #1DA1F2;
 }
 .twitter svg{
@@ -156,8 +162,21 @@ svg.withText{
     background-color: #00B900;
 }
 
-.sendMail{
+.link{
+  color: #0077b5;
+  border-color: #0077b5;
+}
+.link svg{
+  fill: #0077b5;
+}
+.link:hover{
+  background-color: #0077b5;
+}
+
+.sendMail, .sendMail span {
   color: gray;
+}
+.sendMail{
   border-color: gray;
 }
 .sendMail svg{
@@ -167,7 +186,7 @@ svg.withText{
   background-color: gray;
 }
 
-.shareSNS:hover{
+.shareSNS:hover, .shareSNS:hover > span{
   color: #fff;
 }
 .shareSNS:hover svg{

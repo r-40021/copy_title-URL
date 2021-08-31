@@ -1,0 +1,41 @@
+{
+  "Name": {
+    "message": "Easy Page Sharing"
+  },
+  "Description": {
+    "message": "\"Easy page sharing\" makes it easy to share the page you are viewing."
+  },
+  "copyTitle": {
+    "message": "Copy title"
+  },
+  "copyURL": {
+    "message": "Copy URL"
+  },
+  "Popup": {
+    "message": "Share this page"
+  },
+  "lang": {
+    "message": "en"
+  },
+  "titleHeader": {
+    "message": "Title"
+  },
+  "bothHeader": {
+    "message": "Copy both title and URL"
+  },
+  "fb": {
+    "message": "Share"
+  },
+  "tweet": {
+    "message": "Tweet"
+  },
+  "mail": {
+    "message": "Email"
+  },
+  "alert": {
+    "message": "I'm afraid that this page cannot be shared on SNS."
+  },
+  "mailBody": {
+    "message": "Shared page: "
+  }
+}

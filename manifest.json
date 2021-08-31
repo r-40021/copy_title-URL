@@ -1,7 +1,7 @@
 {
-  "name": "ページ簡単共有",
-  "description": "閲覧しているページを簡単に共有できます。",
-  "version": "1.0.1",
+  "name": "__MSG_Name__",
+  "description": "__MSG_Description__",
+  "version": "1.0.2",
   "manifest_version": 3,
   "icons": {
     "16": "icon_16x16.png",
@@ -10,11 +10,12 @@
   },
   "permissions": ["activeTab","scripting","contextMenus"],
   "action": {
-    "default_title": "ページを共有",
+    "default_title": "__MSG_Popup__",
     "default_icon": "icon_48x48.png",
     "default_popup": "popup.html"
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "default_locale": "en"
 }
