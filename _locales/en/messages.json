@@ -3,7 +3,7 @@
     "message": "Easy Page Sharing"
   },
   "Description": {
-    "message": "\"Easy page sharing\" makes it easy to share the page you are viewing."
+    "message": "\"Easy Page Sharing\" makes it easy to share the page you are viewing."
   },
   "copyTitle": {
     "message": "Copy title"
@@ -33,7 +33,7 @@
     "message": "Email"
   },
   "alert": {
-    "message": "I'm afraid that this page cannot be shared on SNS."
+    "message": "I'm afraid that this page cannot be shared on social media sites."
   },
   "mailBody": {
     "message": "Shared page: "
