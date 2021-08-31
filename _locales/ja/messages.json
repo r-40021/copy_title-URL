@@ -1,0 +1,41 @@
+{
+  "Name": {
+    "message": "ページ簡単共有"
+  },
+  "Description": {
+    "message": "閲覧しているページを簡単に共有できます。"
+  },
+  "Popup": {
+    "message": "ページを共有"
+  },
+  "lang": {
+    "message": "ja"
+  },
+  "copyTitle": {
+    "message": "ページタイトルをコピー"
+  },
+  "copyURL": {
+    "message": "URLをコピー"
+  },
+  "tweet": {
+    "message": "ツイート"
+  },
+  "mail": {
+    "message": "メールで送信"
+  },
+  "titleHeader": {
+    "message": "タイトル"
+  },
+  "bothHeader": {
+    "message": "タイトルと URL をコピー"
+  },
+  "fb": {
+    "message": "シェア"
+  },
+  "alert": {
+    "message": "このページでは SNS を用いたシェア機能をご利用になれません。ご了承ください。"
+  },
+  "mailBody": {
+    "message": "【Web ページの共有】"
+  }
+}
