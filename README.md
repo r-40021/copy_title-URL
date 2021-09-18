@@ -1,7 +1,7 @@
 # ページ簡単共有
 今見ているページを簡単に共有できる Chrome 拡張機能
 
-This is an extension that allows you to copy the title or URL of the page you are viewing and share it on various SNS.
+This is an extension that allows you to copy the title or URL of the page you are viewing and share it on various social media sites.
 
 ![2クリックで共有](https://user-images.githubusercontent.com/75155258/131208503-fce1ef0d-bc9d-4d2f-9382-7e8bf335dc11.png)
 
